@@ -50,7 +50,7 @@ function Navigation() {
 
   return (
     <header className={`site-header ${hidden && !menuOpen ? 'is-hidden' : ''} ${menuOpen ? 'menu-is-open' : ''}`}>
-      <a className="wordmark" href="#home" aria-label="Yasmi — back to top" onClick={() => setMenuOpen(false)}>yasmi<span>®</span></a>
+      <a className="wordmark" href="#home" aria-label="Nisam — back to top" onClick={() => setMenuOpen(false)}>Nisam<span>®</span></a>
       <nav className="desktop-nav" aria-label="Main navigation">
         {navItems.map((item, i) => <a key={item.href} href={item.href} className="nav-link"><span className="nav-index">0{i + 1}</span>{item.label}</a>)}
       </nav>
@@ -139,7 +139,7 @@ function Projects({ onOpen }: { onOpen: (project: Project, trigger: HTMLElement)
   return (
     <section className="projects section-pad" id="projects">
       <div className="section-heading projects-heading"><div><Eyebrow>02 / Selected explorations</Eyebrow><h2>A few things, <i>for now.</i></h2></div><p className="mono projects-caption">THREE STUDIES<br />MADE TO BE REPLACED</p></div>
-      <div className="demo-notice"><span className="notice-symbol">✳</span><p>These are demonstration pieces, created as placeholders. The titles, stories and imagery are all ready for Yasmi's own work.</p><span className="mono">SAMPLE WORK</span></div>
+      <div className="demo-notice"><span className="notice-symbol">✳</span><p>These are demonstration pieces, created as placeholders. The titles, stories and imagery are all ready for Nisam's own work.</p><span className="mono">SAMPLE WORK</span></div>
       <div className="project-list">{projects.map((project, i) => <ProjectCard key={project.number} project={project} index={i} onOpen={onOpen} />)}</div>
       <div className="projects-end"><span className="mono">A SMALL COLLECTION, FOR NOW</span><span className="projects-end-line" /><span className="mono">03 — 03</span></div>
     </section>
@@ -160,7 +160,7 @@ function Featured() {
           <div className="featured-story-intro"><Eyebrow>Study one · Replaceable sample</Eyebrow><h2>The shape of <i>slowing down.</i></h2><p>A small visual story about the quiet details that can change the feeling of a room.</p></div>
           <div className="story-moment"><span className="story-number mono">01 — BEGIN WITH LESS</span><p>Space, like a sentence, changes when you let a few things go. What remains has a little more room to speak.</p><div className="story-rule" /></div>
           <div className="story-detail-image"><img src="https://images.unsplash.com/photo-1490312278390-ab64016e0aa9?auto=format&fit=crop&w=1000&q=82" alt="Sculptural ceramic still life for a sample project" loading="lazy" /><span className="mono">A SECOND LOOK / DETAIL 02</span></div>
-          <div className="story-moment story-close"><span className="story-number mono">02 — NOTICE WHAT STAYS</span><p>These lines and images are a placeholder story. Replace them with the real words, process and imagery behind a project of Yasmi's own.</p><a className="text-link" href="#projects">Back to the studies <ArrowLeft size={14} /></a></div>
+          <div className="story-moment story-close"><span className="story-number mono">02 — NOTICE WHAT STAYS</span><p>These lines and images are a placeholder story. Replace them with the real words, process and imagery behind a project of Nisam's own.</p><a className="text-link" href="#projects">Back to the studies <ArrowLeft size={14} /></a></div>
         </div>
       </div>
     </section>
@@ -201,7 +201,7 @@ function Contact() {
     <section className="contact section-pad" id="contact">
       <div className="section-heading contact-heading"><Eyebrow>06 / A good place to end</Eyebrow><span className="section-number mono">OR MAYBE BEGIN</span></div>
       <div className="contact-grid"><div className="contact-main"><span className="contact-flower" aria-hidden="true">✳</span><h2>Something on<br />your <i>mind?</i></h2><p>For a note, a question, or a hello from the other side of the screen.</p><a href={`mailto:${email}`} className="contact-email">{email}<ArrowUpRight size={20} /></a><button className="copy-email" onClick={copyEmail}>{copied ? 'Copied to clipboard ✓' : 'Copy email address'}</button></div><div className="contact-aside"><span className="mono">A NOTE ABOUT THIS ADDRESS</span><p className="body-copy">This is a replaceable placeholder email address. Update it in the Contact section before sharing this page.</p><a className="contact-back" href="#home"><span>Back to the beginning</span><ArrowUpRight size={16} /></a></div></div>
-      <footer className="site-footer"><a className="footer-wordmark" href="#home">yasmi<span>®</span></a><span className="mono footer-center">MADE WITH TIME, SPACE & CURIOSITY</span><a href="#home" className="back-to-top mono">BACK TO TOP ↑</a><span className="mono footer-year">© 2025—26</span></footer>
+      <footer className="site-footer"><a className="footer-wordmark" href="#home">Nisam<span>®</span></a><span className="mono footer-center">MADE WITH TIME, SPACE & CURIOSITY</span><a href="#home" className="back-to-top mono">BACK TO TOP ↑</a><span className="mono footer-year">© 2025—26</span></footer>
     </section>
   )
 }

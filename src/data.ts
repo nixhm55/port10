@@ -10,7 +10,7 @@ export type Project = {
   detail: string
 }
 
-// Replace these clearly marked studies with Yasmi's own work and details.
+// Replace these clearly marked studies with Nisam's own work and details.
 export const projects: Project[] = [
   {
     number: '01',
